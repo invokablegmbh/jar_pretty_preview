@@ -1,0 +1,241 @@
+/* Auto Content Preview */
+
+.j77content-table {
+	font-size: 11px;
+	margin-bottom: 0;
+	color: #333;
+}
+
+.j77content-table th {
+    min-width: 13%;
+}
+
+.j77content-table img {
+	border: 1px solid rgba(0,0,0,0.3);
+}
+
+.j77weitere {
+	float: right;
+}
+
+.j77content-table-wrapper {
+	display: block;
+	max-width: 100%;
+	overflow-x: auto;
+}
+
+.j77content-table .relation {
+	float: left;
+}
+
+.j77content-table .relation.spacer {
+	margin-right: 10px;
+}
+
+.j77content-table .relation img {
+	border: none;
+	margin-right: 5px;
+}
+
+.j77content-table .file {
+	float: left;
+	padding-right: 10px;
+	text-align: center;
+}
+
+.j77content-table .file img {
+	border: none;
+}
+
+.j77content-table .file svg {
+	width: 20px;
+	height: 20px;
+}
+
+.j77preview-outputcontainer .infocell {
+	text-align: right;
+	color: #6c6c6c;
+	margin: 0;
+	font-size: 0.8em;
+}
+
+.j77content-table td {
+	width: 100%;
+}
+
+.j77content-table th, .j77content-table.table>tbody>tr>th {
+	vertical-align: top;
+}
+
+.t3-page-ce-body-inner {
+	position: relative;
+	overflow: hidden;
+}
+
+.exampleContent .j77contenticonbg {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	width: 150px;
+	height: 150px;
+	opacity: 0.025;
+	pointer-events: none;
+	max-width: 50%;
+	max-height: 75%;
+	text-align: right;
+}
+
+.exampleContent .j77contenticonbg img {
+	width: auto;
+	height: auto;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+/* Image Preview */
+.j77content-preview-withimage {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: stretch;
+	align-content: stretch;
+	margin-bottom: 0;
+}
+
+.j77content-preview-withimage-count {
+	margin: auto 0;
+    font-weight: bold;
+}
+
+.j77content-preview-withimage .j77preview-tablecontainer table, .table.table-striped.table-sm.j77content-table {
+	margin-bottom: 5px;
+}
+
+.j77content-preview-withimage .j77preview-image {
+	flex-grow: 0;
+}
+
+.j77content-preview-withimage .j77preview-tablecontainer {
+	flex-grow: 0;
+}
+
+.j77content-preview-withimage .j77preview-image figure {
+	padding: 0 5px 5px 0;
+	float: left;
+}
+
+.j77content-preview-withimage .j77preview-image img {
+	height: 90px;
+    border: 1px solid #ccc;
+}
+
+.j77content-preview-withimage .j77content-preview-withimage .j77preview-image img {
+	height: 45px;
+}
+
+.j77content-table-rch .fa-stack{
+	margin-top: -4px;
+	margin-bottom: -5px;
+	cursor: default;
+}
+
+.j77content-table-rch .device {
+	font-size: 1.2em;
+}
+
+
+.j77content-table-rch .fa-stack .fa-ban{
+	top: -1px;
+	pointer-events: none;
+}
+
+/* Dataflow */
+
+.j77content-table-dataflow.j77content-table-dataflow.j77content-table-dataflow.j77content-table-dataflow {
+	border: 1px solid rgba(109 170 224 / .6);
+}
+
+.j77content-table-dataflow.j77content-table-dataflow.j77content-table-dataflow.j77content-table-dataflow > tbody td,
+.j77content-table-dataflow.j77content-table-dataflow.j77content-table-dataflow.j77content-table-dataflow > tbody th {
+	border: none;
+}
+
+.j77content-table-dataflow.j77content-table-dataflow.j77content-table-dataflow.j77content-table-dataflow > tbody > tr {
+	background-color: rgba(109 170 224 / .1);
+}
+
+.j77content-table .badge {
+	border-radius: 10%;
+}
+
+.j77content-table .badge i.fa{
+	text-shadow: 0px 1px black, 2px 1px black;
+}
+
+.j77content-table .badge i.fa.fa-rotate-180{
+	text-shadow: 0px -1px black, -2px -1px black;
+}
+
+.j77content-table-dataflow .relation {
+	float: none;
+	display: inline-block;
+    margin-right: .5em;
+}
+
+.j77preview-outputcontainer .relation img,
+.j77preview-outputcontainer .relation svg,
+.j77preview-outputcontainer .relation .icon-color
+ {
+	border: none;    
+    height: 1em;
+    top: -.1em;
+    position: relative;
+	margin: 0;
+	left: -.2em;
+	margin-right: -.2em;
+}
+.j77preview-outputcontainer .relation svg,
+.j77preview-outputcontainer .relation .icon-color.icon-color {
+	width: 1.3em;
+    top: .1em;
+	transform: scale(1);
+}
+
+.exampleContent > table.j77content-table + .j77preview-outputcontainer {
+	margin-top: 10px;
+}
+
+.j77contenttitle .title-editicon {
+	display: none;
+}
+
+.j77contenttitle:hover {
+	text-decoration: underline;
+}
+
+.j77contenttitle:hover .title-editicon {
+	display: inline;
+}
+
+.j77contenttitle .title-editicon svg {
+	height: 1em;
+    display: inline;
+    width: 1em;
+    top: 0.2em;
+    position: relative;
+}
+
+/* Contentfooter */
+.t3-page-ce .t3-page-ce-footer.t3-page-ce-footer {
+	padding: 5px;
+}
+
+.t3-page-ce .t3-page-ce-footer {
+	border-top: 1px solid #DDD;
+}
+
+.t3-page-ce .t3-page-ce-footer > .t3-page-ce-info > .t3-page-ce-footer {
+	border-top: none;
+}

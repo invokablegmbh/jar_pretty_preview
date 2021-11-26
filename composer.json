@@ -1,0 +1,33 @@
+{
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://h17.jarmedia.de/satis/packages"
+        }
+    ],
+    "name": "jar/jar_pretty_preview",    
+    "type": "typo3-cms-extension",
+    "description": "Generates an automatic pretty preview of content elements in the backend based on the TCA fields",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "JAR Media GmbH",
+            "role": "Developer",
+            "email": "info@jar.media",
+            "homepage": "https://jar.media"
+        }
+    ],
+    "require": {        
+        "jar/jar_utilities": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "Jar\\PrettyPreview\\": "Classes/"
+        }
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "jar_pretty_preview"
+        }
+    }
+}

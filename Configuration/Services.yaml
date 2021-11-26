@@ -1,0 +1,11 @@
+services:
+   _defaults:
+      autowire: true
+      autoconfigure: true
+      public: false
+
+   Jar\PrettyPreview\:
+      resource: '../Classes/*'
+
+   Jar\PrettyPreview\Controller\AjaxController:
+      public: true
