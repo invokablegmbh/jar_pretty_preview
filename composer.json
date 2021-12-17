@@ -10,13 +10,19 @@
     "description": "Generates an automatic pretty preview of content elements in the backend based on the TCA fields",
     "license": "GPL-2.0-or-later",
     "authors": [
-        {
-            "name": "JAR Media GmbH",
-            "role": "Developer",
-            "email": "info@jar.media",
-            "homepage": "https://jar.media"
-        }
-    ],
+	    {
+	        "name": "Julian Lichte",
+	        "email": "julian.lichte@invokable.gmbh",
+	        "homepage": "https://invokable.gmbh",
+	        "role": "Developer"
+	    },
+	    {
+	        "name": "Maurice Möllmer",
+	        "email": "maurice.moellmer@invokable.gmbh",
+	        "homepage": "https://invokable.gmbh",
+	        "role": "Developer"
+	    }
+	],
     "require": {        
         "jar/jar_utilities": "dev-master"
     },
