@@ -24,7 +24,7 @@
 	    }
 	],
     "require": {        
-        "jar/jar_utilities": "dev-master"
+        "jar/jar_utilities": "^v1.0"
     },
     "autoload": {
         "psr-4": {
