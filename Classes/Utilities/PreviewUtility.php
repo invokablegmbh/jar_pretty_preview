@@ -262,7 +262,7 @@ class PreviewUtility
 								$content = '<strong>#</strong> ' . htmlspecialchars((string) $value);
 							} else {
 								// All other Texts							
-								$content = $iconFactory->getIcon('actions-viewmode-list', Icon::SIZE_SMALL)->getMarkup() . ' ' .   htmlspecialchars((string) StringUtility::crop(StringUtility::ripTags($value)));
+								$content = $iconFactory->getIcon('actions-viewmode-list', Icon::SIZE_SMALL)->getMarkup() . ' ' .   htmlspecialchars((string) str_replace(['&nbsp;', '&shy;'], [' ', ''], StringUtility::crop(StringUtility::ripTags($value))));
 							}
 					}
 					break;
@@ -277,8 +277,8 @@ class PreviewUtility
 					if (empty($foreignTable)) {
 						// not related to other Tables
 						$remappedItems = [];
-						foreach (($config['items'] ?? []) as $value) {
-							$remappedItems[$value[1]] = LocalizationUtility::localize($value[0]);
+						foreach (($config['items'] ?? []) as $item) {
+							$remappedItems[$item[1]] = LocalizationUtility::localize($item[0]);
 						}
 						$valueList = is_array($value) ? $value : [$value];
 						foreach ($valueList as $valueListItem) {
