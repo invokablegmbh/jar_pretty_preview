@@ -316,7 +316,11 @@ class PreviewUtility
 									// just use the first image as preview image
 									continue;
 								}
-								$image = reset($file['cropped']) ?? $file['url'];
+								if (is_array($file['cropped'])) {
+									$image = reset($file['cropped']);
+								} else {
+									$image = $file['url'];
+								}
 							} else {
 								$contentItems[] = $iconFactory->getIconForFileExtension($file['extension'], Icon::SIZE_SMALL)->getMarkup() . ' ' . htmlspecialchars((string) $file['name']);
 							}
