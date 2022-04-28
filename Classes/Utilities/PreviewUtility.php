@@ -352,7 +352,10 @@ class PreviewUtility
 		}
 
 		if (!empty($image)) {
-			$result = '<ul class="j77content-preview-withimage"><li class="j77preview-image"><figure><img src="/' . $image . '" alt=""></figure></li><li class="j77preview-tablecontainer">' . $result . '</li></ul>';
+			if(strpos($image, 'http') !== 0 && strpos($image, '/') !== 0) {
+				$image = '/' . $image;
+			}
+			$result = '<ul class="j77content-preview-withimage"><li class="j77preview-image"><figure><img src="' . $image . '" alt=""></figure></li><li class="j77preview-tablecontainer">' . $result . '</li></ul>';
 		}
 
 
