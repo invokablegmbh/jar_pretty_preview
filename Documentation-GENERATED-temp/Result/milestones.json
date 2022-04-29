@@ -1,0 +1,1029 @@
+{
+  "FINAL_EXITCODE": 255,
+  "NAMING": {
+    "meta": "Here we keep names and values that are looking good",
+    "package_name": "project-0.0.0-default.zip",
+    "pdf_name": "manual.project-0.0.0.pdf",
+    "project_language": "default",
+    "project_name": "project",
+    "project_version": "0.0.0"
+  },
+  "SPHINXBUILD": "/ALL/venv/.venv/bin/sphinx-build",
+  "SYMLINK_THE_MAKEDIR": "/ALL/Makedir/SYMLINK_THE_MAKEDIR",
+  "SYMLINK_THE_OUTPUT": "/ALL/Makedir/SYMLINK_THE_OUTPUT",
+  "SYMLINK_THE_PROJECT": "/ALL/Makedir/SYMLINK_THE_PROJECT",
+  "TheProject": "/tmp/RenderDocumentation/2022-04-29_09-19-59_156203/TheProject",
+  "TheProjectBuild": "/tmp/RenderDocumentation/2022-04-29_09-19-59_156203/TheProjectBuild",
+  "TheProjectCacheDir": "/RESULT/Cache",
+  "TheProjectLog": "/tmp/RenderDocumentation/2022-04-29_09-19-59_156203/TheProjectLog",
+  "TheProjectLogHtmlmail": "/tmp/RenderDocumentation/2022-04-29_09-19-59_156203/TheProjectLog/htmlmail",
+  "TheProjectLogHtmlmailMessageHtml": "/tmp/RenderDocumentation/2022-04-29_09-19-59_156203/TheProjectLog/htmlmail/DearProjectOwner.html",
+  "TheProjectLogHtmlmailMessageMdTxt": "/tmp/RenderDocumentation/2022-04-29_09-19-59_156203/TheProjectLog/htmlmail/DearProjectOwner.md.txt",
+  "TheProjectLogHtmlmailMessageRstTxt": "/tmp/RenderDocumentation/2022-04-29_09-19-59_156203/TheProjectLog/htmlmail/DearProjectOwner.rst.txt",
+  "TheProjectLogHtmlmailMessageTxt": "/tmp/RenderDocumentation/2022-04-29_09-19-59_156203/TheProjectLog/htmlmail/DearProjectOwner.txt",
+  "TheProjectLogREADMEfile": "/tmp/RenderDocumentation/2022-04-29_09-19-59_156203/TheProjectLog/htmlmail/README.html",
+  "TheProjectMakedir": "/tmp/RenderDocumentation/2022-04-29_09-19-59_156203/TheProjectMakedir",
+  "TheProjectMakedirThemes": "/tmp/RenderDocumentation/2022-04-29_09-19-59_156203/TheProjectMakedir/_themes",
+  "TheProjectResult": "/tmp/RenderDocumentation/2022-04-29_09-19-59_156203/TheProjectResult",
+  "TheProjectResultBuildinfo": "/tmp/RenderDocumentation/2022-04-29_09-19-59_156203/TheProjectResult/0.0.0/_buildinfo",
+  "TheProjectResultBuildinfoMessage": "/tmp/RenderDocumentation/2022-04-29_09-19-59_156203/TheProjectResult/0.0.0/_buildinfo/DearProjectOwner",
+  "TheProjectResultBuildinfoREADMEfile": "/tmp/RenderDocumentation/2022-04-29_09-19-59_156203/TheProjectResult/0.0.0/_buildinfo/README.html",
+  "TheProjectResultBuildinfoResultJsonfile": "/tmp/RenderDocumentation/2022-04-29_09-19-59_156203/TheProjectResult/0.0.0/_buildinfo/results.json",
+  "TheProjectResultBuildinfoSitemapFilesHtmlTxt": "/tmp/RenderDocumentation/2022-04-29_09-19-59_156203/TheProjectResult/0.0.0/_buildinfo/sitemap_files_html.txt",
+  "TheProjectResultHtmlmailMessageHtml": "/tmp/RenderDocumentation/2022-04-29_09-19-59_156203/TheProjectResult/0.0.0/_buildinfo/DearProjectOwner.html",
+  "TheProjectResultVersion": "/tmp/RenderDocumentation/2022-04-29_09-19-59_156203/TheProjectResult/0.0.0",
+  "TheProjectWebroot": "/RESULT/Result",
+  "absurl_buildinfo_dir": "https://docs.typo3.org//project/0.0.0/_buildinfo/",
+  "absurl_html_dir": "https://docs.typo3.org//project/0.0.0/",
+  "absurl_package_dir": "https://docs.typo3.org//project/packages/",
+  "absurl_parent_dir": "https://docs.typo3.org//project/",
+  "absurl_pdf_dir": "https://docs.typo3.org//project/0.0.0/_pdf/",
+  "absurl_project_parent_dir_planned": "https://docs.typo3.org///",
+  "absurl_settings_cfg_file": "https://docs.typo3.org//project/0.0.0/_buildinfo/Settings.cfg",
+  "absurl_warnings_txt_file": "https://docs.typo3.org//project/0.0.0/_buildinfo/warnings.txt",
+  "activateLocalSphinxDebugging": 0,
+  "active_section": "default",
+  "all_html_files_sanitized": 1,
+  "all_html_files_sanitized_count": 4,
+  "allow_unsafe": 0,
+  "assembled": [
+    "html"
+  ],
+  "build_html": "success",
+  "build_html_folder": "/tmp/RenderDocumentation/2022-04-29_09-19-59_156203/TheProjectBuild/html",
+  "builds_successful": [
+    "html"
+  ],
+  "buildsettings": {
+    "builddir": "project/0.0.0",
+    "gitbranch": "",
+    "gitdir": "/PROJECT",
+    "giturl": "",
+    "localization": "default",
+    "logdir": ".",
+    "masterdoc": "/tmp/RenderDocumentation/2022-04-29_09-19-59_156203/TheProject/Documentation/Index",
+    "origproject": "/PROJECT",
+    "origprojectdocroot": "Documentation",
+    "origprojectmasterdoc": "Documentation/Index",
+    "package_key": "project",
+    "package_language": "default",
+    "package_zip": "0",
+    "project": "project",
+    "t3docdir": "Documentation",
+    "ter_extension": "0",
+    "ter_extkey": "",
+    "ter_extversion": "",
+    "version": "0.0.0"
+  },
+  "buildsettings_builddir": "project/0.0.0",
+  "buildsettings_default": {
+    "builddir": "",
+    "gitbranch": "",
+    "gitdir": "",
+    "giturl": "",
+    "localization": "",
+    "logdir": "",
+    "masterdoc": "",
+    "origproject": "",
+    "origprojectdocroot": "",
+    "origprojectmasterdoc": "",
+    "package_key": "",
+    "package_language": "default",
+    "package_zip": 0,
+    "project": "",
+    "t3docdir": "",
+    "ter_extension": 0,
+    "ter_extkey": "",
+    "ter_extversion": "",
+    "version": ""
+  },
+  "buildsettings_file": "/tmp/RenderDocumentation/2022-04-29_09-19-59_156203/TheProjectMakedir/buildsettings.sh",
+  "buildsettings_file_fixed": true,
+  "buildsettings_initial": {
+    "builddir": "project/0.0.0",
+    "gitbranch": "master",
+    "gitdir": "/PROJECT",
+    "giturl": "",
+    "localization": "default",
+    "logdir": ".",
+    "masterdoc": "Documentation/Index",
+    "package_key": "project",
+    "package_language": "default",
+    "package_zip": "0",
+    "project": "project",
+    "t3docdir": "Documentation",
+    "ter_extension": "0",
+    "ter_extkey": "",
+    "ter_extversion": "",
+    "version": "0.0.0"
+  },
+  "buildsettings_jsonfile_in_makedir": "/tmp/RenderDocumentation/2022-04-29_09-19-59_156203/TheProjectMakedir/buildsettings.json",
+  "checksum_file": "/ALL/Makedir/build.checksum",
+  "checksum_new": "9dc87c11c82329512c9f0ef4bb252ec2",
+  "checksum_ttl_seconds": 604800,
+  "composerjson": {
+    "authors": [
+      {
+        "email": "julian.lichte@invokable.gmbh",
+        "homepage": "https://invokable.gmbh",
+        "name": "Julian Lichte",
+        "role": "Developer"
+      },
+      {
+        "email": "maurice.moellmer@invokable.gmbh",
+        "homepage": "https://invokable.gmbh",
+        "name": "Maurice M\u00f6llmer",
+        "role": "Developer"
+      }
+    ],
+    "autoload": {
+      "psr-4": {
+        "Jar\\PrettyPreview\\": "Classes/"
+      }
+    },
+    "description": "Generates an automatic pretty preview of content elements in the backend based on the TCA fields",
+    "extra": {
+      "typo3/cms": {
+        "extension-key": "jar_pretty_preview"
+      }
+    },
+    "license": "GPL-2.0-or-later",
+    "name": "jar/jar_pretty_preview",
+    "repositories": [
+      {
+        "type": "composer",
+        "url": "https://h17.jarmedia.de/satis/packages"
+      }
+    ],
+    "require": {
+      "jar/jar_utilities": "^v1.0"
+    },
+    "type": "typo3-cms-extension"
+  },
+  "conf_py_file": "/ALL/Makedir/conf.py",
+  "conf_py_masterfile": "/ALL/Makedir/conf.py",
+  "configset": "default",
+  "create_buildinfo": 1,
+  "debug_always_make_milestones_snapshot": 1,
+  "disable_include_files_check": 0,
+  "documentation_folder": "/tmp/RenderDocumentation/2022-04-29_09-19-59_156203/TheProject/Documentation",
+  "documentation_folder_for_sphinx": "/tmp/RenderDocumentation/2022-04-29_09-19-59_156203/TheProject/Documentation",
+  "dummy": 1,
+  "email_admin": "",
+  "email_admin_send_extra_mail": 0,
+  "email_notify_about_new_build": [],
+  "email_user_bcc": "",
+  "email_user_cc": "",
+  "email_user_do_not_send": 0,
+  "email_user_notify_is_turned_off": 0,
+  "email_user_notify_setting_exists": 0,
+  "email_user_receivers_exlude_list": [
+    "documentation@typo3.org",
+    "info@typo3.org",
+    "kasperYYYY@typo3.com",
+    "kasperYYYY@typo3.org"
+  ],
+  "email_user_to_instead": "",
+  "emails_found_in_projects": [
+    [
+      "Documentation/Index.rst",
+      [
+        "info@invokable.gmbh"
+      ]
+    ],
+    [
+      "ext_emconf.php",
+      [
+        "info@invokable.gmbh"
+      ]
+    ]
+  ],
+  "emails_user_from_project": [
+    "info@invokable.gmbh"
+  ],
+  "force_rebuild_needed": 1,
+  "get_documentation_defaults": [
+    "/PROJECT/* =>  /TheProject",
+    "/PROJECT/Documentation/**/* =>  /TheProject/Documentation",
+    "/PROJECT/doc/**/*           =>  /TheProject/doc"
+  ],
+  "get_documentation_failed": [
+    [
+      "/PROJECT/doc/**/*           =>  /TheProject/doc",
+      [
+        "source folder not found"
+      ]
+    ]
+  ],
+  "get_documentation_succeded": [
+    "/PROJECT/* =>  /TheProject",
+    "/PROJECT/Documentation/**/* =>  /TheProject/Documentation"
+  ],
+  "gitdir_must_start_with": "/home/mbless/HTDOCS/:/home/marble/Repositories/:/tmp/",
+  "has_settingscfg": true,
+  "html_doctrees_folder": "/RESULT/Cache/html/.doctrees",
+  "html_key_values": {
+    "absurl_buildinfo": "https://docs.typo3.org//project/0.0.0/_buildinfo/",
+    "absurl_documentation_zip": "",
+    "absurl_publish_dir": "https://docs.typo3.org//project/0.0.0/",
+    "absurl_settings_cfg": "https://docs.typo3.org//project/0.0.0/_buildinfo/Settings.cfg",
+    "absurl_warnings_txt": "https://docs.typo3.org//project/0.0.0/_buildinfo/warnings.txt",
+    "build_time": "2022-04-29 09:20:05",
+    "project_name": "Pretty Preview",
+    "project_version": "VERSION?",
+    "receivers_from_project": "<a href=\"mailto:info@invokable.gmbh\" style=\"Margin:0;color:#b34700;font-family:Helvetica,Arial,sans-serif;font-weight:400;line-height:1.3;margin:0;padding:0;text-align:left;text-decoration:none\" target=\"_blank\">info@invokable.gmbh</a>",
+    "receivers_from_settings_cfg": "None",
+    "this_failed": "singlehtml, pdf, package.",
+    "this_was_made": "<a href=\"https://docs.typo3.org//project/0.0.0/\" style=\"Margin:0;color:#b34700;font-family:Helvetica,Arial,sans-serif;font-weight:400;line-height:1.3;margin:0;padding:0;text-align:left;text-decoration:none\" target=\"_blank\">html</a>, <a href=\"https://docs.typo3.org//project/0.0.0/_buildinfo/\" style=\"Margin:0;color:#b34700;font-family:Helvetica,Arial,sans-serif;font-weight:400;line-height:1.3;margin:0;padding:0;text-align:left;text-decoration:none\" target=\"_blank\">buildinfo</a>."
+  },
+  "included_files_check_is_ok": true,
+  "jobfile_data": {},
+  "known_systemtools": {
+    "bzip2": "/usr/bin/bzip2",
+    "check_include_files.py": "/ALL/venv/.venv/bin/check_include_files.py",
+    "dvips": "",
+    "git": "/usr/bin/git",
+    "git-restore-mtime": "",
+    "git-restore-mtime-modified": "",
+    "gzip": "/usr/bin/gzip",
+    "html2text": "",
+    "latex": "",
+    "latexmk": "",
+    "makeindex": "",
+    "pandoc": "/usr/bin/pandoc",
+    "pdflatex": "",
+    "pip": "/ALL/venv/.venv/bin/pip",
+    "pipenvpython": "",
+    "python2": "/ALL/venv/.venv/bin/python2",
+    "python3": "",
+    "soffice": "",
+    "sphinx-build": "/ALL/venv/.venv/bin/sphinx-build",
+    "t3xutils.phar": "",
+    "tidy": "/usr/bin/tidy",
+    "zip": "/usr/bin/zip"
+  },
+  "latex_contrib_typo3_folder": "/ALL/Downloads/texmf_typo3",
+  "locale_folders": {
+    "": "",
+    "default": ""
+  },
+  "locale_locales": [],
+  "locale_masterdocs": [],
+  "localization_bs": "default",
+  "lockfile": "/tmp/RenderDocumentation/lockfile.json",
+  "lockfile_create_logstamp": "2022-04-29_09-19-59_405248",
+  "lockfile_name": "lockfile.json",
+  "lockfile_planned": "/tmp/RenderDocumentation/lockfile.json",
+  "lockfile_time": 1651223999,
+  "lockfile_ttl_seconds": 1800,
+  "make_html": 1,
+  "make_latex": 0,
+  "make_package": 0,
+  "make_pdf": 0,
+  "make_singlehtml": 0,
+  "makedir": "/ALL/Makedir",
+  "makedir_abspath": "/ALL/Makedir",
+  "masterdoc": "/tmp/RenderDocumentation/2022-04-29_09-19-59_156203/TheProject/Documentation/Index",
+  "masterdoc_candidates": [
+    "Documentation/Index.rst",
+    "Documentation/index.rst",
+    "Documentation/Index.md",
+    "Documentation/index.md",
+    "README.rst",
+    "README.md"
+  ],
+  "masterdoc_selected": {
+    "default": "Documentation/Index.rst"
+  },
+  "masterdoc_with_ext": "/tmp/RenderDocumentation/2022-04-29_09-19-59_156203/TheProject/Documentation/Index.rst",
+  "masterdocs_initial": {
+    "Documentation/Index.md": false,
+    "Documentation/Index.rst": true,
+    "Documentation/index.md": false,
+    "Documentation/index.rst": false,
+    "README.md": false,
+    "README.rst": true
+  },
+  "objects_inv_json_path": "/tmp/RenderDocumentation/2022-04-29_09-19-59_156203/TheProjectBuild/html/objects.inv.json",
+  "objects_inv_path": "/tmp/RenderDocumentation/2022-04-29_09-19-59_156203/TheProjectBuild/html/objects.inv",
+  "oo_parser": "dl",
+  "postprocess_cleanup_files": "done",
+  "postprocessing_is_required": 1,
+  "publish_dir": "/RESULT/Result/project/0.0.0",
+  "publish_dir_X": "/ALL/dummy_webroot/typo3cms/drafts/project/de-de/0.0.0",
+  "publish_dir_buildinfo": "/RESULT/Result/project/0.0.0/_buildinfo",
+  "publish_dir_buildinfo_X": "/ALL/dummy_webroot/typo3cms/drafts/project/de-de/0.0.0/_buildinfo",
+  "publish_dir_buildinfo_planned": "/RESULT/Result/project/0.0.0/_buildinfo",
+  "publish_dir_buildinfo_planned_X": "/ALL/dummy_webroot/typo3cms/drafts/project/de-de/0.0.0/_buildinfo",
+  "publish_dir_pdf_planned": "/RESULT/Result/project/0.0.0/_pdf",
+  "publish_dir_pdf_planned_X": "/ALL/dummy_webroot/typo3cms/drafts/project/de-de/0.0.0/_pdf",
+  "publish_dir_planned": "/RESULT/Result/project/0.0.0",
+  "publish_dir_planned_X": "/ALL/dummy_webroot/typo3cms/drafts/project/de-de/0.0.0",
+  "publish_file_pdf_planned": "",
+  "publish_file_pdf_planned_X": "",
+  "publish_html_done": 1,
+  "publish_html_done_X": 1,
+  "publish_language_dir": "/RESULT/Result/project",
+  "publish_language_dir_X": "/ALL/dummy_webroot/typo3cms/drafts/project",
+  "publish_language_dir_planned": "/RESULT/Result/project/",
+  "publish_language_dir_planned_X": "/ALL/dummy_webroot/typo3cms/drafts/project/de-de",
+  "publish_package_dir_planned": "/RESULT/Result/project/packages",
+  "publish_package_dir_planned_X": "/ALL/dummy_webroot/typo3cms/drafts/project/packages",
+  "publish_package_file_planned": "",
+  "publish_package_file_planned_X": "",
+  "publish_params_data": {
+    "publish_dir": "project/0.0.0",
+    "publish_dir_buildinfo": "project/0.0.0/_buildinfo",
+    "publish_language_dir": "project",
+    "publish_package_file": "",
+    "publish_packages_xml_file": "",
+    "publish_project_dir": "project",
+    "publish_project_parent_dir": "",
+    "todo_update_stable_symlink": 1
+  },
+  "publish_params_json_file": "/RESULT/Result/publish-params.json",
+  "publish_params_json_file_X": "/ALL/dummy_webroot/publish-params.json",
+  "publish_parent_dir_planned": "/RESULT/Result/project",
+  "publish_parent_dir_planned_X": "/ALL/dummy_webroot/typo3cms/drafts/project/de-de",
+  "publish_project_dir": "/RESULT/Result/project",
+  "publish_project_dir_X": "/ALL/dummy_webroot/typo3cms/drafts/project",
+  "publish_project_dir_planned": "/RESULT/Result/project",
+  "publish_project_dir_planned_X": "/ALL/dummy_webroot/typo3cms/drafts/project",
+  "publish_project_parent_dir": "/RESULT/Result/",
+  "publish_project_parent_dir_X": "/ALL/dummy_webroot/typo3cms/drafts",
+  "publish_project_parent_dir_planned": "/RESULT/Result/",
+  "publish_project_parent_dir_planned_X": "/ALL/dummy_webroot/typo3cms/drafts",
+  "publish_settings_cfg_planned": "/RESULT/Result/project/0.0.0/_buildinfo/Settings.cfg",
+  "publish_settings_cfg_planned_X": "/ALL/dummy_webroot/typo3cms/drafts/project/de-de/0.0.0/_buildinfo/Settings.cfg",
+  "publish_warnings_txt_planned": "/RESULT/Result/project/0.0.0/_buildinfo/warnings.txt",
+  "publish_warnings_txt_planned_X": "/ALL/dummy_webroot/typo3cms/drafts/project/de-de/0.0.0/_buildinfo/warnings.txt",
+  "ready_for_build": true,
+  "rebuild_needed": 1,
+  "rebuild_needed_because_of_change": 1,
+  "rebuild_needed_tctconfig": "1",
+  "relative_part_of_builddir": "project/0.0.0",
+  "remove_docutils_conf": 0,
+  "replace_static_in_html": 0,
+  "resultdir": "/RESULT",
+  "reveal_exitcodes": 1,
+  "reveal_milestones": 1,
+  "settings_cfg": {
+    "extensions": {
+      "any_name_youtube": "sphinxcontrib.youtube"
+    },
+    "general": {
+      "copyright": "by invokable GmbH",
+      "project": "Pretty Preview",
+      "release": "1.0.3"
+    },
+    "html_theme_options": {
+      "github_branch": "master",
+      "github_repository": "invokablegmbh/jar-assets",
+      "project_contact": "",
+      "project_discussions": "",
+      "project_home": "",
+      "project_issues": "https://github.com/invokablegmbh/jar_pretty_preview/issues",
+      "project_repository": "https://github.com/invokablegmbh/jar_pretty_preview"
+    },
+    "intersphinx_mapping": {
+      "h2document": "https://docs.typo3.org/m/typo3/docs-how-to-document/main/en-us/",
+      "t3coreapi": "https://docs.typo3.org/m/typo3/reference-coreapi/main/en-us/",
+      "t3install": "https://docs.typo3.org/m/typo3/guide-installation/main/en-us/",
+      "t3sitepackage": "https://docs.typo3.org/m/typo3/tutorial-sitepackage/main/en-us/",
+      "t3tsref": "https://docs.typo3.org/m/typo3/reference-typoscript/main/en-us/",
+      "t3viewhelper": "https://docs.typo3.org/other/typo3/view-helper-reference/main/en-us/"
+    }
+  },
+  "settingscfg_file": "/tmp/RenderDocumentation/2022-04-29_09-19-59_156203/TheProject/Documentation/Settings.cfg",
+  "sitemap_files_html_count": 4,
+  "sitemap_files_html_jsonfile": "/tmp/RenderDocumentation/2022-04-29_09-19-59_156203/20-Postprocess/sitemap_files_html.json",
+  "sitemap_files_html_txtfile": "/tmp/RenderDocumentation/2022-04-29_09-19-59_156203/20-Postprocess/sitemap_files_html.txt",
+  "smtp_host": "",
+  "sphinxVerboseLevel": 1,
+  "statics_path": "_static/",
+  "statics_to_keep": [
+    "_static/language_data.js"
+  ],
+  "talk": 1,
+  "theme_info": {
+    "build_mtime": "1626871584",
+    "module_name": "sphinx_typo3_theme",
+    "version_scm": "4.6.2",
+    "version_scm_build": "",
+    "version_scm_core": "4.6.2",
+    "version_scm_pre_release": ""
+  },
+  "theme_info_json_file": "/tmp/RenderDocumentation/2022-04-29_09-19-59_156203/TheProjectBuild/html/_static/_version_info_GENERATED.json",
+  "theme_module_path": "/ALL/venv/.venv/lib/python2.7/site-packages/sphinx_typo3_theme",
+  "themesdir": "/THEMES",
+  "time_finished_at": "2022-04-29 09:20:05 921279",
+  "time_finished_at_unixtime": 1651224005.921279,
+  "time_started_at": "2022-04-29 09:19:59 223149",
+  "time_started_at_unixtime": 1651223999.223149,
+  "tool_exitcodes_2": {
+    "10-Toolchain-actions/run_01-Start-with-everything.py": "0,0,",
+    "10-Toolchain-actions/run_02-Show-help-and-exit.py": "0,0,",
+    "10-Toolchain-actions/run_03-Run-action-and-exit.py": "0,0,",
+    "12-Get-ready-for-the-project/run_05-Acquire-lock.py": "0,0,",
+    "12-Get-ready-for-the-project/run_10-Check-system-tools.py": "0,0,",
+    "12-Get-ready-for-the-project/run_15-Ensure-basic-parameters.py": "0,0,",
+    "12-Get-ready-for-the-project/run_20-Merge-all-buildsettings.py": "0,0,",
+    "12-Get-ready-for-the-project/run_30-Adjust-the-buildsettings.py": "0,0,",
+    "12-Get-ready-for-the-project/run_35-Define-general-values.py": "0,0,",
+    "12-Get-ready-for-the-project/run_40-Ensure-conf-py.py": "0,-2,Ok, conf.py exists.",
+    "14-Provide-the-project/04-Check-project-source-params/run_Check-project-source-params.py": "0,0,",
+    "14-Provide-the-project/08-Find-ter-version/run_Find-ter-version.py": "0,-2,Nothing to do - insufficient params",
+    "14-Provide-the-project/12-Fetch-ter-extension/run_Fetch-ter-extension.py": "0,-2,Bad PARAMS or nothing to do",
+    "14-Provide-the-project/28-Steps-A/run_00-Check-requirements.py": "0,0,",
+    "14-Provide-the-project/28-Steps-A/run_01-Clone-or-update-repository.py": "0,-2,giturl AND gitbranch is not true",
+    "14-Provide-the-project/28-Steps-A/run_02-Look-for-documentation.py": "0,0,",
+    "14-Provide-the-project/28-Steps-A/run_03-Copy-the-project.py": "0,0,",
+    "14-Provide-the-project/28-Steps-A/run_08-Copy-the-makedir.py": "0,0,",
+    "14-Provide-the-project/28-Steps-A/run_16-Override-files-in-makedir.py": "0,0,",
+    "14-Provide-the-project/28-Steps-A/run_20-Create-project-dirs.py": "0,0,",
+    "14-Provide-the-project/32-Convert-oo2rst/run_3201-Convert-OO-to-html.py": "0,-1,",
+    "14-Provide-the-project/32-Convert-oo2rst/run_3205-001-Gif-to-Png.py": "0,-2,Bad PARAMS or nothing to do",
+    "14-Provide-the-project/32-Convert-oo2rst/run_3213-002-Copy-and-clean.py": "0,-2,Bad PARAMS or nothing to do",
+    "14-Provide-the-project/32-Convert-oo2rst/run_3217-003-through-Tidy.py": "0,-2,Bad PARAMS or nothing to do",
+    "14-Provide-the-project/32-Convert-oo2rst/run_3221-004-Tidy-to-Rest-and-Postprocess.py": "0,-2,Bad PARAMS or nothing to do",
+    "14-Provide-the-project/32-Convert-oo2rst/run_3229-005-Export-images.py": "0,-2,Bad PARAMS or nothing to do",
+    "14-Provide-the-project/32-Convert-oo2rst/run_3233-Copy-to-Documentation.py": "0,-2,Bad PARAMS or nothing to do",
+    "14-Provide-the-project/40-Steps-B/run_24-Inspect-the-project.py": "0,0,",
+    "14-Provide-the-project/40-Steps-B/run_28-Move-and-choose-masterdoc.py": "0,0,",
+    "14-Provide-the-project/40-Steps-B/run_30-Convert-markdown-files.py": "0,0,",
+    "14-Provide-the-project/40-Steps-B/run_32-Check-rebuild-needed.py": "0,0,",
+    "14-Provide-the-project/40-Steps-B/run_36-Move-localizations-away.py": "0,-2,Bad PARAMS or nothing to do",
+    "14-Provide-the-project/40-Steps-B/run_40-Create-todos-for-localization.py": "0,-2,Nothing to do - no localizations found",
+    "16-Convert-and-fix-and-check/run_00-Check-requirements.py": "0,0,",
+    "16-Convert-and-fix-and-check/run_01-Convert-Settings-yml-to-cfg.py": "0,-2,Nothing to do. Settings.cfg exists.",
+    "16-Convert-and-fix-and-check/run_02-Fix-buildsettings.py": "0,0,",
+    "16-Convert-and-fix-and-check/run_03-Prepare-sphinx.py": "0,0,",
+    "16-Convert-and-fix-and-check/run_04-Check-included-files.py": "0,0,",
+    "16-Convert-and-fix-and-check/run_05-Learn-from-settings-cfg.py": "0,0,",
+    "16-Convert-and-fix-and-check/run_22-Get-more-documentation-files.py": "0,-2,Bad PARAMS or nothing to do",
+    "16-Convert-and-fix-and-check/run_30-Read-Git-Log.py": "0,0,",
+    "18-Make-and-build/40-Html/run_40-Make-html.py": "0,0,",
+    "18-Make-and-build/41-Singlehtml/run_41-Make-singlehtml.py": "0,-2,Nothing to do",
+    "18-Make-and-build/42-Latex/run_42-Make-Latex.py": "0,-2,Nothing to do",
+    "18-Make-and-build/42-Latex/run_43-Tweak-tex-file.py": "0,-2,Bad params or nothing to do",
+    "18-Make-and-build/42-Latex/run_45-Copy-latex-typo3-stuff.py": "0,-2,Bad params or nothing to do",
+    "18-Make-and-build/run_Check-requirements.py": "0,0,",
+    "20-Postprocess/run_00-Check-requirements.py": "0,0,",
+    "20-Postprocess/run_52-Cleanup-html-builds.py": "0,0,",
+    "20-Postprocess/run_54-Look-at-theme-info-json.py": "0,0,",
+    "20-Postprocess/run_60-Collect-sitemap-files.py": "0,0,",
+    "20-Postprocess/run_64-Process-Html.py": "0,0,",
+    "20-Postprocess/run_66-Remove-_static-from-html.py": "0,-2,Bad PARAMS or nothing to do",
+    "20-Postprocess/run_70-Create-objects-inv-json.py": "0,0,PARAMS are ok",
+    "22-Assemble-results/run_01-Assemble-html-pdf-and-more.py": "0,0,",
+    "22-Assemble-results/run_13-Create-package.py": "0,-2,Bad PARAMS or nothing to do",
+    "26-Collect-buildinfo/64-Create-buildinfo-folder/run_01.py": "0,0,",
+    "26-Collect-buildinfo/66-Steps/run_06-SaveDocumentsZip.py": "0,-2,warnings.txt file not found",
+    "26-Collect-buildinfo/66-Steps/run_66-Save-warnings-txt-in-buildinfo.py": "0,0,",
+    "26-Collect-buildinfo/66-Steps/run_68-Save-PDF-buildinfo.py": "0,-2,Bad params or nothing to do",
+    "26-Collect-buildinfo/66-Steps/run_70-Create-a-text-report.py": "0,-1,",
+    "26-Collect-buildinfo/run_Check-requirements.py": "0,0,",
+    "28-Note-time/run_Note-finish-time.py": "0,0,",
+    "30-If-success/01-Plan-publishing/run_01-Plan-publishing.py": "0,0,",
+    "30-If-success/02-Create-html-report/01-Create-html-file/run_01-Create-html-file.py": "0,0,",
+    "30-If-success/02-Create-html-report/02-Generate-txt-from-html/run_02-Generate-txt-from-html.py": "0,0,",
+    "30-If-success/02-Create-html-report/03-Create-README/run_03-Create-README-from-HTML.py": "0,0,",
+    "30-If-success/run_00-Check-requirements.py": "0,0,",
+    "32-If-failure/run_00-Check-requirements.py": "0,0,",
+    "34-Report-more-to-buildinfo/02-Copy-generated-Settings-cfg/run_02-Copy-generated-Settings-cfg.py": "0,-2,Bad PARAMS or nothing to do",
+    "34-Report-more-to-buildinfo/03-Copy-LaTeX-info/run_03-Copy-latex-build.py": "0,-2,Tool is turned OFF for now",
+    "34-Report-more-to-buildinfo/04-Copy-README/run_04-Copy-README-html-tobuildinfo.py": "0,0,",
+    "34-Report-more-to-buildinfo/05-Save-results-json/run_05-Save-results-json.py": "0,0,",
+    "34-Report-more-to-buildinfo/06-Copy-Some-Logfiles/run_06.py": "0,0,",
+    "36-Get-ready-for-publishing/run_01-Treat-pdf-folder.py": "0,-2,Nothing to do",
+    "40-Publish-on-same-machine/run_03-Publish-html.py": "0,0,",
+    "40-Publish-on-same-machine/run_06-Publish-latex.py": "0,-2,Bad PARAMS or nothing to do",
+    "40-Publish-on-same-machine/run_06-Publish-package.py": "0,-2,Bad PARAMS or nothing to do",
+    "40-Publish-on-same-machine/run_31-Try-pdf-from-published-latex.py": "0,-2,Bad params",
+    "60-Publish/run_10-Create-publish-params-json.py": "0,0,"
+  },
+  "tools_exitcodes": {
+    "10-Toolchain-actions/run_01-Start-with-everything.py": 0,
+    "10-Toolchain-actions/run_02-Show-help-and-exit.py": 0,
+    "10-Toolchain-actions/run_03-Run-action-and-exit.py": 0,
+    "12-Get-ready-for-the-project/run_05-Acquire-lock.py": 0,
+    "12-Get-ready-for-the-project/run_10-Check-system-tools.py": 0,
+    "12-Get-ready-for-the-project/run_15-Ensure-basic-parameters.py": 0,
+    "12-Get-ready-for-the-project/run_20-Merge-all-buildsettings.py": 0,
+    "12-Get-ready-for-the-project/run_30-Adjust-the-buildsettings.py": 0,
+    "12-Get-ready-for-the-project/run_35-Define-general-values.py": 0,
+    "12-Get-ready-for-the-project/run_40-Ensure-conf-py.py": 0,
+    "14-Provide-the-project/04-Check-project-source-params/run_Check-project-source-params.py": 0,
+    "14-Provide-the-project/08-Find-ter-version/run_Find-ter-version.py": 0,
+    "14-Provide-the-project/12-Fetch-ter-extension/run_Fetch-ter-extension.py": 0,
+    "14-Provide-the-project/28-Steps-A/run_00-Check-requirements.py": 0,
+    "14-Provide-the-project/28-Steps-A/run_01-Clone-or-update-repository.py": 0,
+    "14-Provide-the-project/28-Steps-A/run_02-Look-for-documentation.py": 0,
+    "14-Provide-the-project/28-Steps-A/run_03-Copy-the-project.py": 0,
+    "14-Provide-the-project/28-Steps-A/run_08-Copy-the-makedir.py": 0,
+    "14-Provide-the-project/28-Steps-A/run_16-Override-files-in-makedir.py": 0,
+    "14-Provide-the-project/28-Steps-A/run_20-Create-project-dirs.py": 0,
+    "14-Provide-the-project/32-Convert-oo2rst/run_3201-Convert-OO-to-html.py": 0,
+    "14-Provide-the-project/32-Convert-oo2rst/run_3205-001-Gif-to-Png.py": 0,
+    "14-Provide-the-project/32-Convert-oo2rst/run_3213-002-Copy-and-clean.py": 0,
+    "14-Provide-the-project/32-Convert-oo2rst/run_3217-003-through-Tidy.py": 0,
+    "14-Provide-the-project/32-Convert-oo2rst/run_3221-004-Tidy-to-Rest-and-Postprocess.py": 0,
+    "14-Provide-the-project/32-Convert-oo2rst/run_3229-005-Export-images.py": 0,
+    "14-Provide-the-project/32-Convert-oo2rst/run_3233-Copy-to-Documentation.py": 0,
+    "14-Provide-the-project/40-Steps-B/run_24-Inspect-the-project.py": 0,
+    "14-Provide-the-project/40-Steps-B/run_28-Move-and-choose-masterdoc.py": 0,
+    "14-Provide-the-project/40-Steps-B/run_30-Convert-markdown-files.py": 0,
+    "14-Provide-the-project/40-Steps-B/run_32-Check-rebuild-needed.py": 0,
+    "14-Provide-the-project/40-Steps-B/run_36-Move-localizations-away.py": 0,
+    "14-Provide-the-project/40-Steps-B/run_40-Create-todos-for-localization.py": 0,
+    "16-Convert-and-fix-and-check/run_00-Check-requirements.py": 0,
+    "16-Convert-and-fix-and-check/run_01-Convert-Settings-yml-to-cfg.py": 0,
+    "16-Convert-and-fix-and-check/run_02-Fix-buildsettings.py": 0,
+    "16-Convert-and-fix-and-check/run_03-Prepare-sphinx.py": 0,
+    "16-Convert-and-fix-and-check/run_04-Check-included-files.py": 0,
+    "16-Convert-and-fix-and-check/run_05-Learn-from-settings-cfg.py": 0,
+    "16-Convert-and-fix-and-check/run_22-Get-more-documentation-files.py": 0,
+    "16-Convert-and-fix-and-check/run_30-Read-Git-Log.py": 0,
+    "18-Make-and-build/40-Html/run_40-Make-html.py": 0,
+    "18-Make-and-build/41-Singlehtml/run_41-Make-singlehtml.py": 0,
+    "18-Make-and-build/42-Latex/run_42-Make-Latex.py": 0,
+    "18-Make-and-build/42-Latex/run_43-Tweak-tex-file.py": 0,
+    "18-Make-and-build/42-Latex/run_45-Copy-latex-typo3-stuff.py": 0,
+    "18-Make-and-build/run_Check-requirements.py": 0,
+    "20-Postprocess/run_00-Check-requirements.py": 0,
+    "20-Postprocess/run_52-Cleanup-html-builds.py": 0,
+    "20-Postprocess/run_54-Look-at-theme-info-json.py": 0,
+    "20-Postprocess/run_60-Collect-sitemap-files.py": 0,
+    "20-Postprocess/run_64-Process-Html.py": 0,
+    "20-Postprocess/run_66-Remove-_static-from-html.py": 0,
+    "20-Postprocess/run_70-Create-objects-inv-json.py": 0,
+    "22-Assemble-results/run_01-Assemble-html-pdf-and-more.py": 0,
+    "22-Assemble-results/run_13-Create-package.py": 0,
+    "26-Collect-buildinfo/64-Create-buildinfo-folder/run_01.py": 0,
+    "26-Collect-buildinfo/66-Steps/run_06-SaveDocumentsZip.py": 0,
+    "26-Collect-buildinfo/66-Steps/run_66-Save-warnings-txt-in-buildinfo.py": 0,
+    "26-Collect-buildinfo/66-Steps/run_68-Save-PDF-buildinfo.py": 0,
+    "26-Collect-buildinfo/66-Steps/run_70-Create-a-text-report.py": 0,
+    "26-Collect-buildinfo/run_Check-requirements.py": 0,
+    "28-Note-time/run_Note-finish-time.py": 0,
+    "30-If-success/01-Plan-publishing/run_01-Plan-publishing.py": 0,
+    "30-If-success/02-Create-html-report/01-Create-html-file/run_01-Create-html-file.py": 0,
+    "30-If-success/02-Create-html-report/02-Generate-txt-from-html/run_02-Generate-txt-from-html.py": 0,
+    "30-If-success/02-Create-html-report/03-Create-README/run_03-Create-README-from-HTML.py": 0,
+    "30-If-success/run_00-Check-requirements.py": 0,
+    "32-If-failure/run_00-Check-requirements.py": 0,
+    "34-Report-more-to-buildinfo/02-Copy-generated-Settings-cfg/run_02-Copy-generated-Settings-cfg.py": 0,
+    "34-Report-more-to-buildinfo/03-Copy-LaTeX-info/run_03-Copy-latex-build.py": 0,
+    "34-Report-more-to-buildinfo/04-Copy-README/run_04-Copy-README-html-tobuildinfo.py": 0,
+    "34-Report-more-to-buildinfo/05-Save-results-json/run_05-Save-results-json.py": 0,
+    "34-Report-more-to-buildinfo/06-Copy-Some-Logfiles/run_06.py": 0,
+    "36-Get-ready-for-publishing/run_01-Treat-pdf-folder.py": 0,
+    "40-Publish-on-same-machine/run_03-Publish-html.py": 0,
+    "40-Publish-on-same-machine/run_06-Publish-latex.py": 0,
+    "40-Publish-on-same-machine/run_06-Publish-package.py": 0,
+    "40-Publish-on-same-machine/run_31-Try-pdf-from-published-latex.py": 0,
+    "60-Publish/run_10-Create-publish-params-json.py": 0
+  },
+  "tools_facts": {
+    "10-Toolchain-actions": [],
+    "12-Get-ready-for-the-project": [],
+    "14-Provide-the-project/04-Check-project-source-params": [],
+    "14-Provide-the-project/08-Find-ter-version": [],
+    "14-Provide-the-project/12-Fetch-ter-extension": [],
+    "14-Provide-the-project/28-Steps-A": [],
+    "14-Provide-the-project/32-Convert-oo2rst": [],
+    "14-Provide-the-project/40-Steps-B": [],
+    "16-Convert-and-fix-and-check": [],
+    "18-Make-and-build": [],
+    "18-Make-and-build/40-Html": [],
+    "18-Make-and-build/41-Singlehtml": [],
+    "18-Make-and-build/42-Latex": [],
+    "20-Postprocess": [],
+    "22-Assemble-results": [],
+    "26-Collect-buildinfo": [],
+    "26-Collect-buildinfo/64-Create-buildinfo-folder": [],
+    "26-Collect-buildinfo/66-Steps": [],
+    "28-Note-time": [],
+    "30-If-success": [],
+    "30-If-success/01-Plan-publishing": [],
+    "30-If-success/02-Create-html-report/01-Create-html-file": [],
+    "30-If-success/02-Create-html-report/02-Generate-txt-from-html": [],
+    "30-If-success/02-Create-html-report/03-Create-README": [],
+    "32-If-failure": [],
+    "34-Report-more-to-buildinfo/02-Copy-generated-Settings-cfg": [],
+    "34-Report-more-to-buildinfo/03-Copy-LaTeX-info": [],
+    "34-Report-more-to-buildinfo/04-Copy-README": [],
+    "34-Report-more-to-buildinfo/05-Save-results-json": [],
+    "34-Report-more-to-buildinfo/06-Copy-Some-Logfiles": [],
+    "36-Get-ready-for-publishing": [],
+    "40-Publish-on-same-machine": [],
+    "60-Publish": []
+  },
+  "tools_milliseconds": {
+    "10-Toolchain-actions/run_01-Start-with-everything.py": [
+      18,
+      75,
+      57
+    ],
+    "10-Toolchain-actions/run_02-Show-help-and-exit.py": [
+      89,
+      138,
+      49
+    ],
+    "10-Toolchain-actions/run_03-Run-action-and-exit.py": [
+      148,
+      196,
+      48
+    ],
+    "12-Get-ready-for-the-project/run_05-Acquire-lock.py": [
+      207,
+      256,
+      49
+    ],
+    "12-Get-ready-for-the-project/run_10-Check-system-tools.py": [
+      267,
+      459,
+      192
+    ],
+    "12-Get-ready-for-the-project/run_15-Ensure-basic-parameters.py": [
+      473,
+      519,
+      46
+    ],
+    "12-Get-ready-for-the-project/run_20-Merge-all-buildsettings.py": [
+      531,
+      582,
+      51
+    ],
+    "12-Get-ready-for-the-project/run_30-Adjust-the-buildsettings.py": [
+      601,
+      653,
+      52
+    ],
+    "12-Get-ready-for-the-project/run_35-Define-general-values.py": [
+      669,
+      724,
+      55
+    ],
+    "12-Get-ready-for-the-project/run_40-Ensure-conf-py.py": [
+      737,
+      790,
+      53
+    ],
+    "14-Provide-the-project/04-Check-project-source-params/run_Check-project-source-params.py": [
+      805,
+      856,
+      51
+    ],
+    "14-Provide-the-project/08-Find-ter-version/run_Find-ter-version.py": [
+      872,
+      922,
+      50
+    ],
+    "14-Provide-the-project/12-Fetch-ter-extension/run_Fetch-ter-extension.py": [
+      937,
+      989,
+      52
+    ],
+    "14-Provide-the-project/28-Steps-A/run_00-Check-requirements.py": [
+      1009,
+      1071,
+      62
+    ],
+    "14-Provide-the-project/28-Steps-A/run_01-Clone-or-update-repository.py": [
+      1089,
+      1152,
+      63
+    ],
+    "14-Provide-the-project/28-Steps-A/run_02-Look-for-documentation.py": [
+      1166,
+      1217,
+      51
+    ],
+    "14-Provide-the-project/28-Steps-A/run_03-Copy-the-project.py": [
+      1227,
+      1293,
+      66
+    ],
+    "14-Provide-the-project/28-Steps-A/run_08-Copy-the-makedir.py": [
+      1301,
+      1371,
+      70
+    ],
+    "14-Provide-the-project/28-Steps-A/run_16-Override-files-in-makedir.py": [
+      1386,
+      1446,
+      60
+    ],
+    "14-Provide-the-project/28-Steps-A/run_20-Create-project-dirs.py": [
+      1462,
+      1525,
+      63
+    ],
+    "14-Provide-the-project/32-Convert-oo2rst/run_3201-Convert-OO-to-html.py": [
+      1537,
+      1585,
+      48
+    ],
+    "14-Provide-the-project/32-Convert-oo2rst/run_3205-001-Gif-to-Png.py": [
+      1599,
+      1647,
+      48
+    ],
+    "14-Provide-the-project/32-Convert-oo2rst/run_3213-002-Copy-and-clean.py": [
+      1658,
+      1708,
+      50
+    ],
+    "14-Provide-the-project/32-Convert-oo2rst/run_3217-003-through-Tidy.py": [
+      1719,
+      1776,
+      57
+    ],
+    "14-Provide-the-project/32-Convert-oo2rst/run_3221-004-Tidy-to-Rest-and-Postprocess.py": [
+      1788,
+      1869,
+      81
+    ],
+    "14-Provide-the-project/32-Convert-oo2rst/run_3229-005-Export-images.py": [
+      1879,
+      1930,
+      51
+    ],
+    "14-Provide-the-project/32-Convert-oo2rst/run_3233-Copy-to-Documentation.py": [
+      1938,
+      1990,
+      52
+    ],
+    "14-Provide-the-project/40-Steps-B/run_24-Inspect-the-project.py": [
+      2011,
+      2066,
+      55
+    ],
+    "14-Provide-the-project/40-Steps-B/run_28-Move-and-choose-masterdoc.py": [
+      2088,
+      2145,
+      57
+    ],
+    "14-Provide-the-project/40-Steps-B/run_30-Convert-markdown-files.py": [
+      2168,
+      2231,
+      63
+    ],
+    "14-Provide-the-project/40-Steps-B/run_32-Check-rebuild-needed.py": [
+      2257,
+      2346,
+      89
+    ],
+    "14-Provide-the-project/40-Steps-B/run_36-Move-localizations-away.py": [
+      2368,
+      2426,
+      58
+    ],
+    "14-Provide-the-project/40-Steps-B/run_40-Create-todos-for-localization.py": [
+      2446,
+      2500,
+      54
+    ],
+    "16-Convert-and-fix-and-check/run_00-Check-requirements.py": [
+      2525,
+      2573,
+      48
+    ],
+    "16-Convert-and-fix-and-check/run_01-Convert-Settings-yml-to-cfg.py": [
+      2581,
+      2722,
+      141
+    ],
+    "16-Convert-and-fix-and-check/run_02-Fix-buildsettings.py": [
+      2742,
+      2796,
+      54
+    ],
+    "16-Convert-and-fix-and-check/run_03-Prepare-sphinx.py": [
+      2816,
+      3165,
+      349
+    ],
+    "16-Convert-and-fix-and-check/run_04-Check-included-files.py": [
+      3175,
+      3237,
+      62
+    ],
+    "16-Convert-and-fix-and-check/run_05-Learn-from-settings-cfg.py": [
+      3251,
+      3300,
+      49
+    ],
+    "16-Convert-and-fix-and-check/run_22-Get-more-documentation-files.py": [
+      3317,
+      3384,
+      67
+    ],
+    "16-Convert-and-fix-and-check/run_30-Read-Git-Log.py": [
+      3406,
+      3516,
+      110
+    ],
+    "18-Make-and-build/40-Html/run_40-Make-html.py": [
+      3621,
+      5016,
+      1395
+    ],
+    "18-Make-and-build/41-Singlehtml/run_41-Make-singlehtml.py": [
+      5030,
+      5084,
+      54
+    ],
+    "18-Make-and-build/42-Latex/run_42-Make-Latex.py": [
+      5105,
+      5159,
+      54
+    ],
+    "18-Make-and-build/42-Latex/run_43-Tweak-tex-file.py": [
+      5169,
+      5231,
+      62
+    ],
+    "18-Make-and-build/42-Latex/run_45-Copy-latex-typo3-stuff.py": [
+      5251,
+      5301,
+      50
+    ],
+    "18-Make-and-build/run_Check-requirements.py": [
+      3540,
+      3599,
+      59
+    ],
+    "20-Postprocess/run_00-Check-requirements.py": [
+      5313,
+      5359,
+      46
+    ],
+    "20-Postprocess/run_52-Cleanup-html-builds.py": [
+      5379,
+      5432,
+      53
+    ],
+    "20-Postprocess/run_54-Look-at-theme-info-json.py": [
+      5454,
+      5501,
+      47
+    ],
+    "20-Postprocess/run_60-Collect-sitemap-files.py": [
+      5525,
+      5580,
+      55
+    ],
+    "20-Postprocess/run_64-Process-Html.py": [
+      5605,
+      5804,
+      199
+    ],
+    "20-Postprocess/run_66-Remove-_static-from-html.py": [
+      5831,
+      5887,
+      56
+    ],
+    "20-Postprocess/run_70-Create-objects-inv-json.py": [
+      5912,
+      6023,
+      111
+    ],
+    "22-Assemble-results/run_01-Assemble-html-pdf-and-more.py": [
+      6037,
+      6143,
+      106
+    ],
+    "22-Assemble-results/run_13-Create-package.py": [
+      6168,
+      6225,
+      57
+    ],
+    "26-Collect-buildinfo/64-Create-buildinfo-folder/run_01.py": [
+      6321,
+      6375,
+      54
+    ],
+    "26-Collect-buildinfo/66-Steps/run_06-SaveDocumentsZip.py": [
+      6399,
+      6450,
+      51
+    ],
+    "26-Collect-buildinfo/66-Steps/run_66-Save-warnings-txt-in-buildinfo.py": [
+      6476,
+      6528,
+      52
+    ],
+    "26-Collect-buildinfo/66-Steps/run_68-Save-PDF-buildinfo.py": [
+      6555,
+      6611,
+      56
+    ],
+    "26-Collect-buildinfo/66-Steps/run_70-Create-a-text-report.py": [
+      6636,
+      6692,
+      56
+    ],
+    "26-Collect-buildinfo/run_Check-requirements.py": [
+      6250,
+      6297,
+      47
+    ],
+    "28-Note-time/run_Note-finish-time.py": [
+      6718,
+      6773,
+      55
+    ],
+    "30-If-success/01-Plan-publishing/run_01-Plan-publishing.py": [
+      6875,
+      6935,
+      60
+    ],
+    "30-If-success/02-Create-html-report/01-Create-html-file/run_01-Create-html-file.py": [
+      6962,
+      7191,
+      229
+    ],
+    "30-If-success/02-Create-html-report/02-Generate-txt-from-html/run_02-Generate-txt-from-html.py": [
+      7218,
+      7803,
+      585
+    ],
+    "30-If-success/02-Create-html-report/03-Create-README/run_03-Create-README-from-HTML.py": [
+      7827,
+      7883,
+      56
+    ],
+    "30-If-success/run_00-Check-requirements.py": [
+      6798,
+      6851,
+      53
+    ],
+    "32-If-failure/run_00-Check-requirements.py": [
+      7908,
+      7969,
+      61
+    ],
+    "34-Report-more-to-buildinfo/02-Copy-generated-Settings-cfg/run_02-Copy-generated-Settings-cfg.py": [
+      7997,
+      8045,
+      48
+    ],
+    "34-Report-more-to-buildinfo/03-Copy-LaTeX-info/run_03-Copy-latex-build.py": [
+      8073,
+      8131,
+      58
+    ],
+    "34-Report-more-to-buildinfo/04-Copy-README/run_04-Copy-README-html-tobuildinfo.py": [
+      8157,
+      8214,
+      57
+    ],
+    "34-Report-more-to-buildinfo/05-Save-results-json/run_05-Save-results-json.py": [
+      8241,
+      8300,
+      59
+    ],
+    "34-Report-more-to-buildinfo/06-Copy-Some-Logfiles/run_06.py": [
+      8329,
+      8390,
+      61
+    ],
+    "36-Get-ready-for-publishing/run_01-Treat-pdf-folder.py": [
+      8418,
+      8476,
+      58
+    ],
+    "40-Publish-on-same-machine/run_03-Publish-html.py": [
+      8503,
+      8593,
+      90
+    ],
+    "40-Publish-on-same-machine/run_06-Publish-latex.py": [
+      8608,
+      8663,
+      55
+    ],
+    "40-Publish-on-same-machine/run_06-Publish-package.py": [
+      8690,
+      8748,
+      58
+    ],
+    "40-Publish-on-same-machine/run_31-Try-pdf-from-published-latex.py": [
+      8777,
+      8831,
+      54
+    ],
+    "60-Publish/run_10-Create-publish-params-json.py": [
+      8858,
+      8923,
+      65
+    ]
+  },
+  "try_pdf_build_from_published_latex": 0,
+  "url_of_webroot": "https://docs.typo3.org/",
+  "warnings_file": "/tmp/RenderDocumentation/2022-04-29_09-19-59_156203/TheProjectResult/0.0.0/_buildinfo/warnings.txt",
+  "warnings_file_size": 481,
+  "webroot_abspath": "/ALL/dummy_webroot"
+}

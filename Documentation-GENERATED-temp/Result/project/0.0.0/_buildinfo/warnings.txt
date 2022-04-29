@@ -1,0 +1,5 @@
+./Documentation/Index.rst:98: WARNING: toctree contains reference to nonexisting document u'Sitemap'
+./Documentation/Index.rst:98: WARNING: toctree contains reference to nonexisting document u'genindex'
+./Documentation/Configuration/Index.rst: WARNING: document isn't included in any toctree
+./Documentation/Configuration/Index.rst:: WARNING: 'class' reference target not found: string
+./Documentation/Configuration/Index.rst:: WARNING: 'class' reference target not found: boolean
