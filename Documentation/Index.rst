@@ -81,6 +81,75 @@ If you want to install `jar_pretty_preview` traditionally with Extensionmanager,
 
 #. Install extension
 
+Configuration
+=============
+
+Just register your pretty preview via TCA override in your extension with the following command:
+
+.. code-block:: php
+   :caption: EXT:your_extension/Configuration/TCA/Overrides/tt_content.php
+
+   \Jar\PrettyPreview\Utilities\PreviewUtility::registerContentElement(
+      <CType>,
+      <configuration>
+   );
+   
+.. confval:: CType
+
+   :Required: true
+   :type: string   
+
+   The CType of your content element.
+
+.. confval:: configuration
+
+   :Required: false
+   :type: array   
+
+   You are able to configure the following options:
+
+   .. tip::
+      For white- and blacklisting columns, you can use wildcards like "?" and "*". So instead of define
+      ``table_class, table_caption, table_delimiter, table_enclosure, ...`` specificly, you can use ``table_*``.
+
+   .. confval:: tableColumnWhitelist
+
+      :Required: false
+      :type: array
+
+      List of table specific columns which aren’t processed, grouped by table.
+
+   .. confval:: tableColumnBlacklist
+
+      :Required: false
+      :type: array
+
+      List of tables columns which should be processed exclusively, grouped by table.
+   
+   .. confval:: nestingDepth
+
+      :Required: false
+      :type: integer
+
+      Depth of displayed subrelations to other table records.
+
+**Example:**
+
+We want to pretty preview the "table" content element, but just want to preview the content of all fields starting with ``table_*`` and ``bodtext`` without ``table_delimiter`` and ``table_enclosure``.
+
+.. code-block:: php
+   :caption: Example of EXT:your_extension/Configuration/TCA/Overrides/tt_content.php
+
+   \Jar\PrettyPreview\Utilities\PreviewUtility::registerContentElement('table', [
+      'tableColumnWhitelist' => [
+         'tt_content' => ['table_*', 'bodytext']
+      ],
+      'tableColumnBlacklist' => [
+         'tt_content' => ['table_delimiter', 'table_enclosure']
+      ],
+      'nestingDepth' => 2,
+   ]);
+
 ---------------------------------------------------------------------------------
 
 **TYPO3**

@@ -1,3 +1,0 @@
-docker run --rm --user=0:0 \
-   -v /git/httpdocs/website/public/typo3conf/ext/jar_pretty_preview:/PROJECT:ro \
-   -v /git/httpdocs/website/public/typo3conf/ext/jar_pretty_preview/Documentation-GENERATED-temp:/RESULT t3docs/render-documentation:latest makehtml
