@@ -7,7 +7,7 @@
     ],
     "name": "jar/jar_pretty_preview",    
     "type": "typo3-cms-extension",
-    "description": "Generates an automatic pretty preview of content elements in the backend based on the TCA fields",
+    "description": "Generates an automatic pretty preview of content elements in the backend based on the TCA fields.",
     "license": "GPL-2.0-or-later",
     "authors": [
 	    {
@@ -24,6 +24,7 @@
 	    }
 	],
     "require": {        
+        "typo3/cms-core": "^10.4 || ^11.5",
         "jar/jar_utilities": "^v1.0"
     },
     "autoload": {
