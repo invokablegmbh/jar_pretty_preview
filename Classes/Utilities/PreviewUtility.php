@@ -177,7 +177,7 @@ class PreviewUtility
 			$nestingDepth = ((int) ($configuration['nestingDepth'] ?? 2));
 
 
-			$values = $reflectionService->buildArrayByRow($row, $table, $nestingDepth);
+			$values = reset($reflectionService->buildArrayByRows([$row], $table, $nestingDepth));
 			$definitions = $reflectionService->getTcaFieldDefinition();
 
 			$icon = '';
