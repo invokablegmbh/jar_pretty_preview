@@ -12,7 +12,7 @@ call_user_func(function () {
         ];
 
         // Fallback to Classic Hook if "fluidBasedPageModule" is deactivated
-        if (!$GLOBALS['TYPO3_CONF_VARS']['SYS']['features']['fluidBasedPageModule']) {            
+        if (!array_key_exists('fluidBasedPageModule', $GLOBALS['TYPO3_CONF_VARS']['SYS']['features'])) {      
             $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['cms/layout/class.tx_cms_layout.php']['tt_content_drawItem']['jar_pretty_preview'] = \Jar\PrettyPreview\Hooks\PreviewRendererHook::class;
         }
     }
