@@ -108,6 +108,7 @@ class PreviewUtility
 							.then(async function (response) {
 								const resolved = await response.resolve();
 								document.querySelector(\'[data-pretty-ajax-loader-uid="' . $uid . '"]\').outerHTML = resolved.result;
+								'. self::imageLoadedJavascript($uid) .'
 							}
 						);
 					});
@@ -183,14 +184,44 @@ class PreviewUtility
 			$icon = '';
 			$iconIdentfier = BackendUtility::getWizardInformations($row['CType'])['iconIdentifier'];
 			if (!empty($iconIdentfier)) {
-				$iconFactory = GeneralUtility::makeInstance(IconFactory::class);
+				$iconFactory = GeneralUtility::makeInstance(IconFactory::class); 
 				$icon = '<figure class="j77contenticonbg">' . $iconFactory->getIcon($iconIdentfier, Icon::SIZE_OVERLAY)->getMarkup() . '</figure>';
 			}
-			$content = '<div data-preview-ctype="' . $row['CType'] . '">' . $icon . static::generateContentTable($table, $values, $definitions) . '</div>';
+			$content = '<div data-preview-ctype="' . $row['CType'] . '" data-pretty-content-uid="' . $row['uid'] .'">' . $icon . static::generateContentTable($table, $values, $definitions) . '</div>';
+			$content .= '<script>'. self::imageLoadedJavascript($row['uid']) .'</script>';
 			$cacheSystem->set($hash, $content, [], strtotime('+1week'));
 		}
 
 		return $content;
+	}
+
+
+	/**
+	 * @param int $uid 
+	 * @return string 
+	 */
+	protected static function imageLoadedJavascript(int $uid):string {
+		if(empty($uid)) {
+			return '';
+		}
+		return "
+			(function() {				
+				var images = document.querySelectorAll('[data-pretty-content-uid=\"" . $uid . "\"] .j77preview-image img');				
+				if(images.length) {
+					images.forEach(function(image) {
+						var imageLoadedHandler = function() {
+							image.classList.add('loaded');
+						};
+						if (image.complete) {
+							imageLoadedHandler();
+						} else {
+							image.addEventListener('load', imageLoadedHandler);
+							image.addEventListener('error', imageLoadedHandler);
+						}
+					});
+				}				
+			})();
+		";
 	}
 
 
@@ -358,7 +389,7 @@ class PreviewUtility
 			}
 			$result = '<ul class="j77content-preview-withimage"><li class="j77preview-image"><figure>
 				<img src="' . $image . '" alt="">
-				<span class="icon icon-size-small icon-state-default icon-spin">
+				<span class="icon icon-size-default icon-state-default icon-spin">
     <span class="icon-markup">
         <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 16 16"><g fill="#212121"><path d="M8 15c-3.86 0-7-3.141-7-7 0-3.86 3.14-7 7-7 3.859 0 7 3.14 7 7 0 3.859-3.141 7-7 7zM8 3C5.243 3 3 5.243 3 8s2.243 5 5 5 5-2.243 5-5-2.243-5-5-5z" opacity=".3"/><path d="M14 9a1 1 0 0 1-1-1c0-2.757-2.243-5-5-5a1 1 0 0 1 0-2c3.859 0 7 3.14 7 7a1 1 0 0 1-1 1z"/></g></svg>
     </span>
