@@ -46,12 +46,14 @@ class PreviewRendererHook implements PageLayoutViewDrawItemHookInterface
         &$itemContent,
         array &$row
     ) {
-        $tcaTypeDefinition = $GLOBALS['TCA']['tt_content']['types'][$row['CType']];
-        // use the same settings like used in "fluidBasedPageModule"
-        if(!empty($tcaTypeDefinition['previewRenderer']) && $tcaTypeDefinition['previewRenderer'] === PreviewRenderer::class) {
-            $headerContent = PreviewUtility::generateHeaderMarkup($row, 'tt_content');
-            $itemContent = PreviewUtility::generateContentMarkupWithAjax($row, 'tt_content');
-            $drawItem = false;
+        if(isset($GLOBALS['TCA']['tt_content']['types'][$row['CType']]) && is_array($GLOBALS['TCA']['tt_content']['types'][$row['CType']])) {
+            $tcaTypeDefinition = $GLOBALS['TCA']['tt_content']['types'][$row['CType']];
+            // use the same settings like used in "fluidBasedPageModule"
+            if(!empty($tcaTypeDefinition['previewRenderer']) && $tcaTypeDefinition['previewRenderer'] === PreviewRenderer::class) {
+                $headerContent = PreviewUtility::generateHeaderMarkup($row, 'tt_content');
+                $itemContent = PreviewUtility::generateContentMarkupWithAjax($row, 'tt_content');
+                $drawItem = false;
+            }
         }
     }
 }
