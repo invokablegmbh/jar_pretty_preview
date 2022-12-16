@@ -145,10 +145,10 @@ class PreviewUtility
 
 			$configuration = $GLOBALS['TCA'][$table]['types'][$row[TcaUtility::getTypeFieldOfTable($table)]]['prettyPreviewConfiguration'] ?? [];
 			if(!empty($configuration)) {
-				if(is_array($configuration['tableColumnWhitelist'])) {
+				if(is_array($configuration['tableColumnWhitelist'] ?? null)) {
 					$whitelist = $configuration['tableColumnWhitelist'];
 				}
-				if (is_array($configuration['tableColumnBlacklist'])) {
+				if (is_array($configuration['tableColumnBlacklist'] ?? null)) {
 					$blacklist = $configuration['tableColumnBlacklist'];
 				}
 			}
@@ -247,8 +247,8 @@ class PreviewUtility
 
 		$subclass = '';
 		foreach ($values as $column => $value) {
-			$definition = $definitions[$table][$column];
-			$config = $definition['config'];
+			$definition = $definitions[$table][$column] ?? [];
+			$config = $definition['config'] ?? null;
 
 			// skip empty and unused fields
 			if (empty($config) || !$value || !in_array($column, $visibleFields)) {
@@ -269,7 +269,7 @@ class PreviewUtility
 					break;
 				case 'input':
 				case 'text':
-					switch ($config['renderType']) {
+					switch ($config['renderType'] ?? null) {
 						case 'inputLink':
 							$content = $iconFactory->getIcon('actions-link', Icon::SIZE_SMALL)->getMarkup() . ' ' .  htmlspecialchars($value['text']) . ' <em>(' . htmlspecialchars($value['url']) . ')</em>';
 							break;
@@ -304,7 +304,7 @@ class PreviewUtility
 				case 'radio':
 				case 'select':
 				case 'group':
-					$foreignTable = ($config['type'] === 'group' && $config['internal_type'] === 'db') ? $config['allowed'] : $config['foreign_table'];
+					$foreignTable = ($config['type'] === 'group' && $config['internal_type'] === 'db') ? $config['allowed'] : ($config['foreign_table'] ?? null);
 					$contentItems = [];
 					if (empty($foreignTable)) {
 						// not related to other Tables
@@ -348,7 +348,7 @@ class PreviewUtility
 									// just use the first image as preview image
 									continue;
 								}
-								if (is_array($file['cropped'])) {
+								if (is_array($file['cropped'] ?? null)) {
 									$image = reset($file['cropped']);
 								} else {
 									$image = $file['url'];
