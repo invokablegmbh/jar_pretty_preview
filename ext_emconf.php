@@ -6,7 +6,7 @@ $EM_CONF['jar_pretty_preview'] = array(
 	'category' => 'plugin',
 	'author' => 'invokable GmbH',
 	'author_email' => 'info@invokable.gmbh',
-	'version' => '1.0.16',
+	'version' => '1.0.17',
 	'state' => 'stable',
 	'internal' => '',
 	'uploadfolder' => '0',
@@ -15,7 +15,6 @@ $EM_CONF['jar_pretty_preview'] = array(
 	'constraints' => array(
 		'depends' => array(
 			'typo3' => '10.4.1-11.5.99',
-			'php' => '7.4.0-8.2.999',
 			'jar_utilities' => '1.0.0-1.0.99'
 		),
 		'conflicts' => array(
