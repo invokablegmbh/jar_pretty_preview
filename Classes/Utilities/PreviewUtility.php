@@ -145,10 +145,10 @@ class PreviewUtility
 
 			$configuration = $GLOBALS['TCA'][$table]['types'][$row[TcaUtility::getTypeFieldOfTable($table)]]['prettyPreviewConfiguration'] ?? [];
 			if(!empty($configuration)) {
-				if(is_array($configuration['tableColumnWhitelist'] ?? null)) {
+				if(isset($configuration['tableColumnWhitelist'])) {
 					$whitelist = $configuration['tableColumnWhitelist'];
 				}
-				if (is_array($configuration['tableColumnBlacklist'] ?? null)) {
+				if (isset($configuration['tableColumnBlacklist'])) {
 					$blacklist = $configuration['tableColumnBlacklist'];
 				}
 			}
@@ -269,7 +269,9 @@ class PreviewUtility
 					break;
 				case 'input':
 				case 'text':
-					switch ($config['renderType'] ?? null) {
+				case 'link':
+					$config['renderType'] = $config['type'] == 'link' ? 'inputLink' : $config['renderType'] ?? '';
+					switch ($config['renderType'] ?? '') {
 						case 'inputLink':
 							$content = $iconFactory->getIcon('actions-link', Icon::SIZE_SMALL)->getMarkup() . ' ' .  htmlspecialchars($value['text']) . ' <em>(' . htmlspecialchars($value['url']) . ')</em>';
 							break;
@@ -310,7 +312,7 @@ class PreviewUtility
 						// not related to other Tables
 						$remappedItems = [];
 						foreach (($config['items'] ?? []) as $item) {
-							$remappedItems[$item[1]] = LocalizationUtility::localize($item[0]);
+							$remappedItems[$item['label']] = LocalizationUtility::localize($item['value']);
 						}
 						$valueList = is_array($value) ? $value : [$value];
 						foreach ($valueList as $valueListItem) {
@@ -336,7 +338,8 @@ class PreviewUtility
 					$content = implode(', ', $contentItems);
 					break;
 				case 'inline':
-					if ($config['foreign_table'] === 'sys_file_reference') {
+				case 'file':
+					if ($config['foreign_table'] === 'sys_file_reference' || $config['type'] == 'file') {
 						$contentItems = [];
 						foreach ($value as $file) {
 							if (empty($file)) {
@@ -348,7 +351,7 @@ class PreviewUtility
 									// just use the first image as preview image
 									continue;
 								}
-								if (is_array($file['cropped'] ?? null)) {
+								if (isset($file['cropped'])) {
 									$image = reset($file['cropped']);
 								} else {
 									$image = $file['url'];
@@ -369,7 +372,7 @@ class PreviewUtility
 					}
 					break;
 				default:
-					$content = 'NOT DEFINED: ' . (string) $value;
+					$content = 'NOT DEFINED: ' . (string) (isset($value[0]['uid']) ? $value[0]['uid'] : $value);
 			}
 
 			if (empty(trim(strip_tags($content)))) {
