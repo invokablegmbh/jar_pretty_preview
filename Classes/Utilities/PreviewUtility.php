@@ -99,13 +99,15 @@ class PreviewUtility
 			<div data-pretty-ajax-loader-uid="' . $uid . '">
 				<div class="pretty-spinner">' .  $iconFactory->getIcon('spinner-circle-dark', Icon::SIZE_SMALL)->render() . '</div>
 				<script>				
-					window.addEventListener("load", function() {				
-						(async function() {
-							const request = await fetch(TYPO3.settings.ajaxUrls[\'prettypreview-load-preview-content\'] + \'&uid=' . $uid . '\');
-							const data = await request.json();
-							document.querySelector(\'[data-pretty-ajax-loader-uid="' . $uid . '"]\').outerHTML = data.result;
-							' . self::imageLoadedJavascript($uid) . '
-						})();
+					window.addEventListener("load", function() {
+						setTimeout(function() {				
+							(async function() {
+								const request = await fetch(TYPO3.settings.ajaxUrls[\'prettypreview-load-preview-content\'] + \'&uid=' . $uid . '\');
+								const data = await request.json();
+								document.querySelector(\'[data-pretty-ajax-loader-uid="' . $uid . '"]\').outerHTML = data.result;
+								' . self::imageLoadedJavascript($uid) . '
+							})();
+						}, 50);
 					});
 				</script>
 			</div>';
