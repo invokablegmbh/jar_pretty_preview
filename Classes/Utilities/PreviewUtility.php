@@ -98,19 +98,14 @@ class PreviewUtility
 			$content = '
 			<div data-pretty-ajax-loader-uid="' . $uid . '">
 				<div class="pretty-spinner">' .  $iconFactory->getIcon('spinner-circle-dark', Icon::SIZE_SMALL)->render() . '</div>
-				<script>
-					require(["TYPO3/CMS/Core/Ajax/AjaxRequest"], function (AjaxRequest) {				
-						new AjaxRequest(TYPO3.settings.ajaxUrls[\'prettypreview-load-preview-content\'])
-							.withQueryArguments({
-								uid: ' . $uid . ',
-							})
-							.get()
-							.then(async function (response) {
-								const resolved = await response.resolve();
-								document.querySelector(\'[data-pretty-ajax-loader-uid="' . $uid . '"]\').outerHTML = resolved.result;
-								'. self::imageLoadedJavascript($uid) .'
-							}
-						);
+				<script>				
+					window.addEventListener("load", function() {				
+						(async function() {
+							const request = await fetch(TYPO3.settings.ajaxUrls[\'prettypreview-load-preview-content\'] + \'&uid=' . $uid . '\');
+							const data = await request.json();
+							document.querySelector(\'[data-pretty-ajax-loader-uid="' . $uid . '"]\').outerHTML = data.result;
+							' . self::imageLoadedJavascript($uid) . '
+						})();
 					});
 				</script>
 			</div>';
@@ -312,7 +307,7 @@ class PreviewUtility
 						// not related to other Tables
 						$remappedItems = [];
 						foreach (($config['items'] ?? []) as $item) {
-							$remappedItems[$item['label']] = LocalizationUtility::localize($item['value']);
+							$remappedItems[$item['label']] = LocalizationUtility::localize((string) $item['value']);
 						}
 						$valueList = is_array($value) ? $value : [$value];
 						foreach ($valueList as $valueListItem) {
