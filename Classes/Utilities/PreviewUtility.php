@@ -18,6 +18,7 @@ use TYPO3\CMS\Backend\Utility\BackendUtility as CoreBackendUtility;
 use TYPO3\CMS\Core\Cache\CacheManager;
 use TYPO3\CMS\Core\Imaging\Icon;
 use TYPO3\CMS\Core\Imaging\IconFactory;
+use TYPO3\CMS\Core\Page\PageRenderer;
 use TYPO3\CMS\Core\Utility\ArrayUtility;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Extbase\Persistence\Generic\Exception\TooDirtyException;
@@ -90,26 +91,15 @@ class PreviewUtility
 	{
 		$cacheSystem = GeneralUtility::makeInstance(CacheManager::class)->getCache('pretty_preview_content');
 		$hash = static::generateCacheHashForRow($row);
-
-		// If Preview allready exist in Cache dont load via Ajax
+		$pageRenderer = GeneralUtility::makeInstance(PageRenderer::class);
+    	$pageRenderer->loadJavaScriptModule('@jar/pretty-preview/pretty_preview.js');
+		// If Preview already exist in Cache dont load via Ajax
 		if (($content = $cacheSystem->get($hash)) === false) {
 			$uid = ((int) $row['uid']);
 			$iconFactory = GeneralUtility::makeInstance(IconFactory::class);
 			$content = '
 			<div data-pretty-ajax-loader-uid="' . $uid . '">
 				<div class="pretty-spinner">' .  $iconFactory->getIcon('spinner-circle-dark', Icon::SIZE_SMALL)->render() . '</div>
-				<script>				
-					window.addEventListener("load", function() {
-						setTimeout(function() {				
-							(async function() {
-								const request = await fetch(TYPO3.settings.ajaxUrls[\'prettypreview-load-preview-content\'] + \'&uid=' . $uid . '\');
-								const data = await request.json();
-								document.querySelector(\'[data-pretty-ajax-loader-uid="' . $uid . '"]\').outerHTML = data.result;
-								' . self::imageLoadedJavascript($uid) . '
-							})();
-						}, 50);
-					});
-				</script>
 			</div>';
 		}
 
@@ -185,7 +175,7 @@ class PreviewUtility
 				$icon = '<figure class="j77contenticonbg">' . $iconFactory->getIcon($iconIdentfier, Icon::SIZE_OVERLAY)->getMarkup() . '</figure>';
 			}
 			$content = '<div data-preview-ctype="' . $row['CType'] . '" data-pretty-content-uid="' . $row['uid'] .'">' . $icon . static::generateContentTable($table, $values, $definitions) . '</div>';
-			$content .= '<script>'. self::imageLoadedJavascript($row['uid']) .'</script>';
+			// $content .= '<script>'. self::imageLoadedJavascript($row['uid']) .'</script>';
 			$cacheSystem->set($hash, $content, [], strtotime('+1week'));
 		}
 
