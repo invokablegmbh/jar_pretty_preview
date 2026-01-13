@@ -18,6 +18,8 @@ use TYPO3\CMS\Backend\Utility\BackendUtility as CoreBackendUtility;
 use TYPO3\CMS\Core\Cache\CacheManager;
 use TYPO3\CMS\Core\Imaging\Icon;
 use TYPO3\CMS\Core\Imaging\IconFactory;
+use TYPO3\CMS\Core\Imaging\IconSize;
+use TYPO3\CMS\Core\Localization\LanguageServiceFactory;
 use TYPO3\CMS\Core\Page\PageRenderer;
 use TYPO3\CMS\Core\Utility\ArrayUtility;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
@@ -60,7 +62,7 @@ class PreviewUtility
 		$iconFactory = GeneralUtility::makeInstance(IconFactory::class);
 		$label = $row[$labelColumn];
 		$title = empty($label) ? '' : ' <em>„' . $label . '“</em>';
-		$title .= ' <span class="title-editicon">' . $iconFactory->getIcon('actions-open', Icon::SIZE_SMALL)->getMarkup() . '</span>';
+		$title .= ' <span class="title-editicon">' . $iconFactory->getIcon('actions-open', IconSize::SMALL)->getMarkup() . '</span>';
 		$ceName = BackendUtility::getWizardInformations($row['CType'])['title'];
 
 		$headerContent = '<p class="j77contenttitle"><strong>' . BackendUtility::getWrappedEditLink($table, $row['uid'], $ceName . $title) . '</strong></p>';
@@ -70,12 +72,16 @@ class PreviewUtility
 
 	private static function generateCacheHashForRow(array $row): string
 	{
+		$languageService = GeneralUtility::makeInstance(LanguageServiceFactory::class)
+        ->createFromUserPreferences($GLOBALS['BE_USER'] ?? null);
+		
+		$belang = $languageService->getLocale()?->getName() ?? 'default';
 		$cacheString = [
 			'isAdmin' => $GLOBALS['BE_USER']->isAdmin() ? 1 : 0,
 			'contentUid' => $row['uid'],
 			'langUid' => $row['sys_language_uid'],
 			'tstamp' => $row['tstamp'],
-			'belang' => $GLOBALS['LANG']->lang ?? 'default'
+			'belang' => $belang
 		];
 
 		return sha1(implode('+', $cacheString));
@@ -99,7 +105,7 @@ class PreviewUtility
 			$iconFactory = GeneralUtility::makeInstance(IconFactory::class);
 			$content = '
 			<div data-pretty-ajax-loader-uid="' . $uid . '">
-				<div class="pretty-spinner">' .  $iconFactory->getIcon('spinner-circle-dark', Icon::SIZE_SMALL)->render() . '</div>
+				<div class="pretty-spinner">' .  $iconFactory->getIcon('spinner-circle-dark', IconSize::SMALL)->render() . '</div>
 			</div>';
 		}
 
@@ -260,18 +266,18 @@ class PreviewUtility
 					$config['renderType'] = $config['type'] == 'link' ? 'inputLink' : $config['renderType'] ?? '';
 					switch ($config['renderType'] ?? '') {
 						case 'inputLink':
-							$content = $iconFactory->getIcon('actions-link', Icon::SIZE_SMALL)->getMarkup() . ' ' .  htmlspecialchars($value['text']) . ' <em>(' . htmlspecialchars($value['url']) . ')</em>';
+							$content = $iconFactory->getIcon('actions-link', IconSize::SMALL)->getMarkup() . ' ' .  htmlspecialchars($value['text']) . ' <em>(' . htmlspecialchars($value['url']) . ')</em>';
 							break;
 						case 'inputDateTime':
 							if (in_array('time', $eval)) {
 								// Time
-								$content = $iconFactory->getIcon('actions-clock', Icon::SIZE_SMALL)->getMarkup() . ' ' .  $value['formatedTime'];
+								$content = $iconFactory->getIcon('actions-clock', IconSize::SMALL)->getMarkup() . ' ' .  $value['formatedTime'];
 							} else  if (in_array('datetime', $eval)) {
 								// DateTime
-								$content = $iconFactory->getIcon('actions-calendar', Icon::SIZE_SMALL)->getMarkup() . ' ' .   $value['formatedDate'] . ' ' . $value['formatedTime'];
+								$content = $iconFactory->getIcon('actions-calendar', IconSize::SMALL)->getMarkup() . ' ' .   $value['formatedDate'] . ' ' . $value['formatedTime'];
 							} else  if (in_array('date', $eval)) {
 								// Date 
-								$content = $iconFactory->getIcon('actions-calendar-alternative', Icon::SIZE_SMALL)->getMarkup() . ' ' . $value['formatedDate'];
+								$content = $iconFactory->getIcon('actions-calendar-alternative', IconSize::SMALL)->getMarkup() . ' ' . $value['formatedDate'];
 							}
 							break;
 						default:
@@ -283,12 +289,12 @@ class PreviewUtility
 								$content = '<strong>#</strong> ' . htmlspecialchars((string) $value);
 							} else {
 								// All other Texts							
-								$content = $iconFactory->getIcon('actions-viewmode-list', Icon::SIZE_SMALL)->getMarkup() . ' ' .   htmlspecialchars((string) str_replace(['&nbsp;', '&shy;'], [' ', ''], StringUtility::crop(StringUtility::ripTags($value))));
+								$content = $iconFactory->getIcon('actions-viewmode-list', IconSize::SMALL)->getMarkup() . ' ' .   htmlspecialchars((string) str_replace(['&nbsp;', '&shy;'], [' ', ''], StringUtility::crop(StringUtility::ripTags($value))));
 							}
 					}
 					break;
 				case 'check':
-					$content = $iconFactory->getIcon('actions-check-square', Icon::SIZE_SMALL)->getMarkup() . '&nbsp;';
+					$content = $iconFactory->getIcon('actions-check-square', IconSize::SMALL)->getMarkup() . '&nbsp;';
 					break;
 				case 'radio':
 				case 'select':
@@ -304,7 +310,7 @@ class PreviewUtility
 						$valueList = is_array($value) ? $value : [$value];
 						foreach ($valueList as $valueListItem) {
 							if (!empty($remappedItems[$valueListItem])) {
-								$contentItems[] = $iconFactory->getIcon('actions-check-square', Icon::SIZE_SMALL)->getMarkup() . ' ' . htmlspecialchars((string) $remappedItems[$valueListItem]);
+								$contentItems[] = $iconFactory->getIcon('actions-check-square', IconSize::SMALL)->getMarkup() . ' ' . htmlspecialchars((string) $remappedItems[$valueListItem]);
 							}
 						}
 					} else {
@@ -317,7 +323,7 @@ class PreviewUtility
 						}
 						$labelColumn = TcaUtility::getLabelFieldOfTable($foreignTable);
 						foreach ($value as $valueListItem) {
-							$icon = $iconFactory->getIconForRecord($foreignTable, $valueListItem, Icon::SIZE_SMALL)->getMarkup() ?? '';
+							$icon = $iconFactory->getIconForRecord($foreignTable, $valueListItem, IconSize::SMALL)->getMarkup() ?? '';
 							$title = $valueListItem[$labelColumn] ?? '';
 							$contentItems[] = $icon . ' ' . $title;
 						}
@@ -344,7 +350,7 @@ class PreviewUtility
 									$image = $file['url'];
 								}
 							} else {
-								$contentItems[] = $iconFactory->getIconForFileExtension($file['extension'], Icon::SIZE_SMALL)->getMarkup() . ' ' . htmlspecialchars((string) $file['name']);
+								$contentItems[] = $iconFactory->getIconForFileExtension($file['extension'], IconSize::SMALL)->getMarkup() . ' ' . htmlspecialchars((string) $file['name']);
 							}
 						}
 						$content = implode(', ', $contentItems);
